@@ -156,5 +156,37 @@ footer{
 
 /*______________RESPONSIVE-ADAPTATIVO_______________*/
 @media screen and (max-width: 1280px){
-  
+
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .contenedor-footer > div{
+    margin-bottom: 1rem;
+  }
+
+  .contenedor-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+
+  .contenedor-footer div h3, .contenedor-footer div p{
+    text-align: center;
+
+  }
 }
