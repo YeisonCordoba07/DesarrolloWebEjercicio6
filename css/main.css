@@ -33,16 +33,19 @@ main {
   background-position: center;
   background-size: cover;
 
+}
 
+.header{
+  align-items: center;
 }
 
 .header, section, .contenedor-footer{
-
   max-width: var(--max-width);
   padding: 1rem;
   width: 100%;
   margin:0 auto;
 }
+
 a {
   color: white;
   text-decoration: none;
@@ -61,19 +64,26 @@ a {
 }
 
 
+
+
 /*______________HEADER_______________*/
 
 .header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-
   padding: 1rem;
 }
 
 .logo {
+  display: flex;
   font-size: 42px;
   font-weight: bold;
+  text-align: center;
+}
+
+.logo img{
+  margin-right: 0.5rem;
 }
 
 .nav ul {
@@ -84,7 +94,7 @@ a {
 }
 
 .nav ul li {
-  margin: 20px;
+  margin: 0.5rem;
 }
 
 
@@ -98,13 +108,11 @@ section {
   
   max-width: var(--max-width);
   padding: 2rem;
-  flex-grow: 1;/* Expxlicar */
+  flex-grow: 1;/* Explicar */
   
   align-items: flex-start;
-  justify-content: center;
-
-
-  
+  justify-content: center; 
+  position: relative;
 }
 
 .titulo {
@@ -115,6 +123,23 @@ section {
 
 .subtitulo {
   font-size: 36px;
+  margin: 0 0 2rem 0;
+}
+
+.flecha-izquierda, .flecha-derecha{
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  cursor: pointer;
+}
+  
+.flecha-izquierda {
+  left: -2rem;
+}
+
+.flecha-derecha {
+  right: -2rem;
 }
 
 
