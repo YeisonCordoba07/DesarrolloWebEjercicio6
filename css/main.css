@@ -28,7 +28,7 @@ main {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("/img/background_01.jpeg");
+  background-image: url("../img/background_01.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
